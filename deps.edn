@@ -1,0 +1,7 @@
+{:deps {org.clojure/clojure {:mvn/version "1.10.1"}}
+ :mvn/repos {"my.datomic.com" {:url "https://my.datomic.com/repo"}}
+ :aliases {:dev {:extra-paths ["dev"]
+                 :extra-deps [com.amazonaws/aws-java-sdk-dynamodb
+                              {:mvn/version "1.11.427"
+                               :exclusions [com.fasterxml.jackson.core]}
+                              com.datomic/datomic-pro {:mvn/version "0.9.5981"}]}}}
